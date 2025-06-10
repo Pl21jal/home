@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.url-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.url-item button {
+  margin-left: 10px;
+}
+
+.add-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-section input {
+  flex: 1;
+  padding: 10px;
+}
+
+.add-section button {
+  padding: 10px;
+}
