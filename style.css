@@ -1,60 +1,57 @@
 body {
-  background-color: #111;
+  margin: 0;
+  background: #111;
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-  margin: 0;
 }
 
 .container {
-  width: 100%;
-  max-width: 500px;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.url-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .url-item {
-  background-color: #222;
-  color: #fff;
-  margin: 15px 0;
-  padding: 15px 20px;
-  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  padding: 15px;
+  border-radius: 8px;
   position: relative;
-  box-shadow: 0 2px 5px rgba(255,255,255,0.05);
-  transition: background 0.3s ease;
-}
-
-.url-item:hover {
-  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .url-text {
+  word-break: break-all;
   font-size: 16px;
-  word-wrap: break-word;
 }
 
 .open-btn {
-  margin-top: 12px;
-  padding: 12px;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #0f62fe;
-  color: white;
+  padding: 10px;
+  background: #007bff;
   border: none;
-  border-radius: 6px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s;
 }
 
 .open-btn:hover {
-  background-color: #0353e9;
+  background: #0056b3;
 }
 
 .delete-btn {
@@ -64,35 +61,35 @@ h1 {
   background: transparent;
   border: none;
   font-size: 18px;
+  color: red;
   cursor: pointer;
-  color: #ff4c4c;
 }
 
-.add-section {
+.input-section {
   display: flex;
   gap: 10px;
   margin-top: 30px;
 }
 
-.add-section input {
+.input-section input {
   flex: 1;
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 5px;
   border: none;
 }
 
-.add-section button {
-  padding: 12px 20px;
-  font-size: 16px;
-  background-color: #28a745;
-  border: none;
-  color: white;
-  border-radius: 6px;
+.input-section button {
+  padding: 10px 16px;
+  font-size: 20px;
   cursor: pointer;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
   font-weight: bold;
 }
 
-.add-section button:hover {
-  background-color: #218838;
+.input-section button:hover {
+  background: #1e7e34;
 }
